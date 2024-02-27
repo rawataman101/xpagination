@@ -39,7 +39,7 @@ function App() {
       <div className="wrapper">
         <table>
           <thead>
-            <tr>
+            <tr className="header">
               <th>ID</th>
               <th>Name</th>
               <th>Email</th>
@@ -49,7 +49,7 @@ function App() {
           <tbody>
             {getDisplayedEmployees().map((emp) => (
               <>
-                <tr key={emp.id}>
+                <tr className="table__row" key={emp.id}>
                   <td>{emp.id}</td>
                   <td>{emp.name}</td>
                   <td>{emp.email}</td>

@@ -13,14 +13,15 @@ table {
   border-collapse: collapse;
 }
 
-.header {
+thead {
+  text-align: left;
   color: white;
   height: 35px;
   background-color: #009879;
 }
 
-.table__row {
-  height: 35px;
+td {
+  height: 15px;
 }
 .table__line {
   border-bottom: 1px solid #e5e5e5;
