@@ -66,7 +66,7 @@ function App() {
         <div className="pagination">
           <button
             className="previous"
-            disabled={currentPage === 1}
+            // disabled={currentPage === 1}
             onClick={() => handlePageChange("previous")}
           >
             Previous
@@ -74,9 +74,9 @@ function App() {
           <span className="page__number">{currentPage}</span>
           <button
             className="next"
-            disabled={
-              currentPage === Math.ceil(employeeData.length / employeesPerPage)
-            }
+            // disabled={
+            //   currentPage === Math.ceil(employeeData.length / employeesPerPage)
+            // }
             onClick={() => handlePageChange("next")}
           >
             Next
