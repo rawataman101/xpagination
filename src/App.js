@@ -46,10 +46,9 @@ function App() {
               <th>Role</th>
             </tr>
           </thead>
-
-          {getDisplayedEmployees().map((emp) => (
-            <>
-              <tbody>
+          <tbody>
+            {getDisplayedEmployees().map((emp) => (
+              <>
                 <tr className="table__row" key={emp.id}>
                   <td>{emp.id}</td>
                   <td>{emp.name}</td>
@@ -59,11 +58,11 @@ function App() {
                 <tr className="table__line">
                   <td colSpan="100%"></td>
                 </tr>
-              </tbody>
-            </>
-          ))}
+              </>
+            ))}
+          </tbody>
         </table>
-        <div className="end__line"></div>
+        {/* <div className="end__line"></div> */}
         <div className="pagination">
           <button
             className="previous"
@@ -72,7 +71,7 @@ function App() {
           >
             Previous
           </button>
-          <div className="page__number">{currentPage}</div>
+          <span className="page__number">{currentPage}</span>
           <button
             className="next"
             disabled={
