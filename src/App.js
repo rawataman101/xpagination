@@ -28,7 +28,10 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => setEmployeeData(data))
-      .catch((err) => console.log("failed to fetch data"));
+      .catch((err) => {
+        alert("failed to fetch data");
+        console.log("failed to fetch data");
+      });
   }, [employeeData]);
   return (
     <div className="App">
