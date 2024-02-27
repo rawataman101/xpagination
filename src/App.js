@@ -34,16 +34,19 @@ function App() {
       });
   }, [employeeData]);
   return (
-    <div className="App">
-      <h1>Employee Data</h1>
+    <>
+      <header>Employee Data Table</header>
       <div className="wrapper">
         <table>
-          <tr className="header">
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Role</th>
-          </tr>
+          <thead>
+            <tr className="header">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+
           {getDisplayedEmployees().map((emp) => (
             <>
               <tbody>
@@ -81,7 +84,7 @@ function App() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
