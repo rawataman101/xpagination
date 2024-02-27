@@ -46,15 +46,17 @@ function App() {
           </tr>
           {getDisplayedEmployees().map((emp) => (
             <>
-              <tr className="table__row" key={emp.id}>
-                <td>{emp.id}</td>
-                <td>{emp.name}</td>
-                <td>{emp.email}</td>
-                <td>{emp.role}</td>
-              </tr>
-              <tr className="table__line">
-                <td colSpan="100%"></td>
-              </tr>
+              <tbody>
+                <tr className="table__row" key={emp.id}>
+                  <td>{emp.id}</td>
+                  <td>{emp.name}</td>
+                  <td>{emp.email}</td>
+                  <td>{emp.role}</td>
+                </tr>
+                <tr className="table__line">
+                  <td colSpan="100%"></td>
+                </tr>
+              </tbody>
             </>
           ))}
         </table>
