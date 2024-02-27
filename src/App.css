@@ -26,11 +26,6 @@ table {
 .end__line {
   border-top: 2px solid #009879;
 }
-.pagination__wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
 .pagination {
   margin-top: 50px;

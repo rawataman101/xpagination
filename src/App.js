@@ -61,27 +61,24 @@ function App() {
           ))}
         </table>
         <div className="end__line"></div>
-        <div className="pagination__wrapper">
-          <div className="pagination">
-            <button
-              className="previous"
-              disabled={currentPage === 1}
-              onClick={() => handlePageChange("previous")}
-            >
-              Previous
-            </button>
-            <div className="page__number">{currentPage}</div>
-            <button
-              className="next"
-              disabled={
-                currentPage ===
-                Math.ceil(employeeData.length / employeesPerPage)
-              }
-              onClick={() => handlePageChange("next")}
-            >
-              Next
-            </button>
-          </div>
+        <div className="pagination">
+          <button
+            className="previous"
+            disabled={currentPage === 1}
+            onClick={() => handlePageChange("previous")}
+          >
+            Previous
+          </button>
+          <div className="page__number">{currentPage}</div>
+          <button
+            className="next"
+            disabled={
+              currentPage === Math.ceil(employeeData.length / employeesPerPage)
+            }
+            onClick={() => handlePageChange("next")}
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>
