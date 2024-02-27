@@ -21,7 +21,8 @@ thead {
 }
 
 td {
-  height: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 35px;
 }
 .table__line {
   border-bottom: 1px solid #e5e5e5;

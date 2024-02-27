@@ -55,9 +55,9 @@ function App() {
                   <td>{emp.email}</td>
                   <td>{emp.role}</td>
                 </tr>
-                <tr className="table__line">
+                {/* <tr className="table__line">
                   <td colSpan="100%"></td>
-                </tr>
+                </tr> */}
               </>
             ))}
           </tbody>
